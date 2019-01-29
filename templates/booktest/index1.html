@@ -1,0 +1,141 @@
+<html>
+<head>
+    <title>超级图书馆</title>
+    <meta charset="utf-8">
+    <!-- 3. 引入外部的样式表文件 -->
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <style type="text/css">
+        #nav{
+            background-color: pink;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        a:hover{
+            font-weight: bold;
+            font-size: 20px;
+        }
+        #nav2{
+            width: 900px;
+            height : 50px;
+            background-color: pink;
+        }
+        #nav2 td{
+            width: 150px;
+            height: 50px;
+            background-color: orange;
+            /*内容水平居中*/
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+<!-- 创建导航栏 -->
+    <div id="nav">
+        <a href="#">首页</a>
+        <a href="#">男装</a>
+        <a href="#">女装</a>
+        <a href="#">首页</a>
+        <a href="#">男装</a>
+        <a href="#">女装</a>
+    </div>
+    <div id="nav2">
+        <table>
+            <tr>
+                <td><a href="#">首页</a></td>
+                <td><a href="#">男装</a></td>
+                <td><a href="#">女装</a></td>
+                <td><a href="#">首页</a></td>
+                <td><a href="#">男装</a></td>
+                <td><a href="#">女装</a></td>
+            </tr>
+        </table>
+    </div>
+    <p>普通文本p</p>
+<a href="/create/">
+<i><u><b><sub>创建</sub></b></u></i>
+</a></br>
+<a href="#anchor1" target="_blank">
+<i>早年经历</i></br>
+</a>
+<table border="5px" width="50px" height="50px"　bgcolor="black">
+    <tr>
+        <td>name</td>
+        <td>price</td>
+        <td>date</td></br>
+        
+    </tr>
+    <tr>
+        <td>"射雕"</td>
+        <td>42</td>
+        <td>2011</td></br>
+    </tr>
+    <table border="1px" width="300px" height="50px" align="center" cellpadding="5px" cellspacing="10px" bgcolor="orange">
+        <tr bgcolor="pink" align="right" valign="top">
+            <td>迪丽热巴</td>
+            <td>古力娜扎</td>
+            <td>马尔扎哈</td>
+        </tr>
+        <tr bgcolor="yellow">
+            <td>华晨宇</td>
+            <td>张艺兴</td>
+            <td>吴亦凡</td>
+        </tr>
+        <tr bgcolor="red" align="center" valign="bottom">
+            <td>杨幂</td>
+            <td>赵丽颖</td>
+            <td>天宝</td>
+        </tr>
+</table>
+<table border="1px">
+        <tr>
+            <td width="100px" height="100px" bgcolor="pink">西游记</td>
+            <td bgcolor="orange">三国演义</td>
+            <td>聊斋志异</td>
+        </tr>
+        <tr>
+            <td>三国演义</td>
+            <td>聊斋志异</td>
+            <td>聊斋志异</td>
+        </tr>
+    </table>
+<a href="/static/img/sg.png"><span>hahahaha</span>你好</a>
+<ul>
+{%for book in list%}
+    <li>{{book.btitle}}--<a href="/delete{{book.id}}/">删除</a></li>
+{%endfor%}
+</ul>
+<ol>
+   <li>Coffee ====== Tea</li>
+   <li>Tea</li>
+   <li>Milk</li><hr>
+
+</ol>
+
+<ul type=I>
+   <li><h1>Coffee</h1></li>
+   <li><h2>&nbsp;Tea</h2></li>
+   <li><h3>Milk</h3></li>
+</ul>
+<b>hi</b>
+<p align = 'left' id=p3>This is some text in a very short paragraph</p>
+<img width= 100 height= 50 src="/static/img/sg.png"/>
+<hr>
+<form>
+    <select name="province">
+                    <option value="hebei">河北省</option>
+                    <option value="heilongjiang">黑龙江省</option>
+                    <option value="hunan">湖南省</option>
+    </select></br>
+    <textarea>
+    "please input your comment"
+    </textarea></br>
+    <label for="male">男</label>
+    <input type="radio" name="gender" value="male" id="male">
+</form>
+
+</body>
+</html>
